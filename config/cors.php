@@ -19,7 +19,9 @@ return [
 
     'allowed_methods' => ['*'],
 
-    'allowed_origins' => ['*'],
+    'allowed_origins' => [
+        'https://polite-river-0fd11b11e.6.azurestaticapps.net'
+    ],
 
     'allowed_origins_patterns' => [],
 
@@ -29,6 +31,6 @@ return [
 
     'max_age' => 0,
 
-    'supports_credentials' => false,
+    'supports_credentials' => true,
 
 ];
