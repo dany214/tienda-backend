@@ -15,22 +15,14 @@ return [
     |
     */
 
-    'paths' => ['api/*', 'sanctum/csrf-cookie'],
+    'paths' => ['api/*'],
 
     'allowed_methods' => ['*'],
 
-    'allowed_origins' => [
-        'https://polite-river-0fd11b11e.6.azurestaticapps.net'
-    ],
-
-    'allowed_origins_patterns' => [],
+    'allowed_origins' => ['https://polite-river-0fd11b11e.6.azurestaticapps.net'],
 
     'allowed_headers' => ['*'],
 
-    'exposed_headers' => [],
-
-    'max_age' => 0,
-
-    'supports_credentials' => true,
+    'supports_credentials' => false,
 
 ];
