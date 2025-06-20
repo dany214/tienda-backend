@@ -12,9 +12,6 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware): void {
-        $middleware->append([
-            \Illuminate\Http\Middleware\HandleCors::class, // ⬅️ Añade esta línea
-        ]);
         $middleware->alias([
             'admin' => \App\Http\Middleware\AuthMiddleware::class,
         ]);
